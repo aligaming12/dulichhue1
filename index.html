@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá Huế Mộng Mơ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Đang tải...</p>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Khám phá Huế</div>
+            <ul>
+                <li><a href="#attractions">Danh lam thắng cảnh</a></li>
+                <li><a href="#cuisine">Ẩm thực Huế</a></li>
+                <li><a href="#homestays">Homestay đẹp</a></li>
+                <li><a href="#cafes">Cafe view đẹp</a></li>
+            </ul>
+            <div class="account-area">
+                <a href="#" class="account-trigger">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="account-trigger-text">Tài khoản</span>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-group" id="logged-out-view">
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="register.html">Đăng ký</a>
+                    </div>
+                    <div class="dropdown-group" id="logged-in-view">
+                        <div class="user-greeting-dropdown">Xin chào, <span id="user-name-display"></span></div>
+                        <a href="#" id="logout-btn">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero" style="background-image: url('images/hue_background.jpg');">
+            <h1>Huế Mộng Mơ</h1>
+            <p>Khám phá vẻ đẹp cổ kính và lãng mạn của Cố đô</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="attractions" class="section hidden">
+            <h2>Danh lam thắng cảnh</h2>
+            <div class="swiper content-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="details/dai_noi.html" class="card-link">
+                            <div class="card">
+                                <img src="images/dai_noi.jpg" alt="Đại Nội Huế">
+                                <div class="card-content">
+                                    <h3>Đại Nội Huế</h3>
+                                    <p>Khám phá quần thể di tích Cố đô Huế, nơi lưu giữ nhiều công trình kiến trúc cung đình độc đáo.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/chua_thien_mu.html" class="card-link">
+                            <div class="card">
+                                <img src="images/chua_thien_mu.jpg" alt="Chùa Thiên Mụ">
+                                <div class="card-content">
+                                    <h3>Chùa Thiên Mụ</h3>
+                                    <p>Ngôi chùa cổ kính và linh thiêng bên bờ sông Hương, biểu tượng của Huế.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/lang_khai_dinh.html" class="card-link">
+                            <div class="card">
+                                <img src="images/lang_khai_dinh.jpg" alt="Lăng Khải Định">
+                                <div class="card-content">
+                                    <h3>Lăng Khải Định</h3>
+                                    <p>Công trình kiến trúc độc đáo, kết hợp tinh xảo giữa văn hóa Đông - Tây.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/song_huong.html" class="card-link">
+                            <div class="card">
+                                <img src="images/song_huong.jpg" alt="Sông Hương">
+                                <div class="card-content">
+                                    <h3>Sông Hương</h3>
+                                    <p>Du thuyền trên sông Hương thơ mộng, ngắm cảnh và thưởng thức ca Huế.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/lang_minh_mang.html" class="card-link">
+                            <div class="card">
+                                <img src="images/lang_minh_mang.jpg" alt="Lăng Minh Mạng">
+                                <div class="card-content">
+                                    <h3>Lăng Minh Mạng</h3>
+                                    <p>Nơi an nghỉ uy nghiêm, cổ kính của vị vua thứ hai triều Nguyễn, hài hòa với thiên nhiên.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="cuisine" class="section hidden">
+            <h2>Ẩm thực Huế</h2>
+            <div class="swiper content-slider">
+                <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <a href="details/bun_bo_hue.html" class="card-link">
+                            <div class="card">
+                                <img src="images/bun_bo_hue.jpg" alt="Bún bò Huế">
+                                <div class="card-content">
+                                    <h3>Bún bò Huế</h3>
+                                    <p>Món bún đặc trưng với hương vị đậm đà, cay nồng khó quên.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     <div class="swiper-slide">
+                        <a href="details/nem_lui.html" class="card-link">
+                            <div class="card">
+                                <img src="images/nem_lui.jpg" alt="Nem lụi">
+                                <div class="card-content">
+                                    <h3>Nem lụi</h3>
+                                    <p>Món ăn vặt hấp dẫn với nem nướng thơm lừng, cuốn bánh tráng rau sống.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     <div class="swiper-slide">
+                        <a href="details/banh_beo.html" class="card-link">
+                            <div class="card">
+                                <img src="images/banh_beo.jpg" alt="Bánh bèo nậm lọc">
+                                <div class="card-content">
+                                    <h3>Bánh bèo, Nậm, Lọc</h3>
+                                    <p>Bộ ba món bánh truyền thống tinh tế, hương vị đặc trưng xứ Huế.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/com_hen.html" class="card-link">
+                            <div class="card">
+                                <img src="images/com_hen.jpg" alt="Cơm Hến">
+                                <div class="card-content">
+                                    <h3>Cơm Hến</h3>
+                                    <p>Món ăn dân dã nhưng đậm đà hương vị, kết hợp giữa cơm trắng, hến xào và các loại rau thơm.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/che_hue.html" class="card-link">
+                            <div class="card">
+                                <img src="images/che_hue.jpeg"alt="Chè Huế">
+                                <div class="card-content">
+                                    <h3>Chè Huế</h3>
+                                    <p>Thế giới chè ngọt ngào và đa dạng, từ chè cung đình đến các loại chè dân dã.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="homestays" class="section hidden">
+             <h2>Homestay đẹp ở Huế</h2>
+            <div class="swiper content-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="details/homestay_a.html" class="card-link">
+                            <div class="card">
+                                <img src="images/homestay_a.jpg" alt="Homestay A">
+                                <div class="card-content">
+                                    <h3>Homestay Riverside</h3>
+                                    <p>View sông Hương lãng mạn, kiến trúc cổ điển, dịch vụ chu đáo.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/homestay_c.html" class="card-link">
+                            <div class="card">
+                                <img src="images/homestay_c.jpg" alt="Homestay C">
+                                <div class="card-content">
+                                    <h3>Ancient Hue Garden Houses</h3>
+                                    <p>Trải nghiệm nghỉ dưỡng trong không gian nhà rường truyền thống.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/deja_vu.html" class="card-link">
+                            <div class="card">
+                                <img src="images/deja_vu.jpg" alt="Deja Vu Homestay">
+                                <div class="card-content">
+                                    <h3>Deja Vu Homestay</h3>
+                                    <p>Phong cách vintage độc đáo, không gian ấm cúng và gần gũi như ở nhà.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="cafes" class="section hidden">
+            <h2>Quán Cafe view đẹp ở Huế</h2>
+            <div class="swiper content-slider">
+                <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <a href="details/cafe_b.html" class="card-link">
+                           <div class="card">
+                                <img src="images/cafe_b.jpg" alt="Cafe B">
+                                <div class="card-content">
+                                    <h3>An Nhien Garden Cafe</h3>
+                                    <p>Không gian sân vườn yên tĩnh, thoáng đãng, thức uống đa dạng.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     <div class="swiper-slide">
+                        <a href="details/tan_cafe.html" class="card-link">
+                            <div class="card">
+                                <img src="images/tan_cafe.jpg" alt="Tân Cafe">
+                                <div class="card-content">
+                                    <h3>Tân Cafe</h3>
+                                    <p>Nơi dành cho những tín đồ cafe rang xay, không gian tối giản và hiện đại.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/mat_biec.html" class="card-link">
+                            <div class="card">
+                                <img src="images/mat_biec.jpg" alt="Mắt Biếc Cafe">
+                                <div class="card-content">
+                                    <h3>Mắt Biếc Cafe</h3>
+                                    <p>Tái hiện không gian làng quê trong phim "Mắt Biếc", góc check-in hoài niệm.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 Khám phá Huế. Design by AliStudio</p>
+    </footer>
+
+    <a href="#" id="back-to-top-btn" aria-label="Về đầu trang"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
